@@ -1,0 +1,2171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bank soal interaktif KSM/OMI IPAS MI/SD 2024-2026, pembahasan, tryout, dan prediksi 2026.">
+  <meta name="theme-color" content="#0f766e">
+  <title>KSM/OMI Smart Prep — IPAS MI/SD</title>
+  <style>
+:root{
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:#18302d;
+  background:#f4f8f6;
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
+  --ink:#17312e;
+  --muted:#6c7f7b;
+  --line:#d9e5e1;
+  --card:#ffffff;
+  --green:#0f766e;
+  --green2:#0d9488;
+  --green-soft:#e7f7f4;
+  --gold:#c48a20;
+  --gold-soft:#fff6dd;
+  --red:#b42318;
+  --red-soft:#fff0ee;
+  --blue:#2563eb;
+  --shadow:0 10px 28px rgba(18,58,52,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#f8fbfa 0,#f2f7f5 100%);min-width:320px}
+button,input,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+.app-shell{min-height:100vh}
+.topbar{height:76px;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:20}
+.brand{display:flex;gap:12px;align-items:center;cursor:pointer}
+.brand-mark{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--green),#14b8a6);color:white;display:grid;place-items:center;font-weight:900;letter-spacing:.03em;box-shadow:0 8px 18px rgba(15,118,110,.18)}
+.brand strong{display:block;font-size:15px}
+.brand span{display:block;font-size:12px;color:var(--muted);margin-top:1px}
+.top-actions{display:flex;align-items:center;gap:10px}
+.live-pill{font-size:12px;font-weight:800;background:#edf9f4;border:1px solid #c9eadf;border-radius:999px;padding:8px 11px;color:#126b54}
+.live-pill i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#16a34a;margin-right:6px}
+.ghost-btn,.secondary-btn{border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 14px;border-radius:12px;font-weight:750}
+.layout{display:grid;grid-template-columns:230px minmax(0,1fr);max-width:1500px;margin:0 auto}
+.sidebar{padding:22px 14px 28px;border-right:1px solid var(--line);min-height:calc(100vh - 76px);position:sticky;top:76px;align-self:start}
+.sidebar nav{display:grid;gap:7px}
+.nav-btn{border:0;background:transparent;padding:11px 12px;border-radius:12px;display:flex;align-items:center;gap:11px;color:#526864;text-align:left;font-weight:720}
+.nav-btn:first-letter{font-weight:900}
+.nav-btn.active{background:var(--green-soft);color:var(--green)}
+.nav-btn:hover{background:#f0f6f4}
+.sidebar-note{margin-top:24px;padding:14px;border-radius:15px;background:#fffaf0;border:1px solid #f0dfb4;font-size:12px;color:#765b22}
+.sidebar-note p{margin:6px 0 0;line-height:1.55}
+.content{padding:28px 32px 70px;min-width:0}
+.hero-panel{min-height:330px;border-radius:28px;overflow:hidden;background:linear-gradient(130deg,#0b4f4b 0%,#0f766e 54%,#159589 100%);color:#fff;display:grid;grid-template-columns:1.35fr .65fr;align-items:center;padding:42px 46px;position:relative;box-shadow:0 22px 48px rgba(15,118,110,.18)}
+.hero-panel:before{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-100px;top:-170px;background:rgba(255,255,255,.06)}
+.hero-copy{position:relative;z-index:2;max-width:780px}
+.kicker,.eyebrow{font-size:12px;font-weight:850;letter-spacing:.12em;text-transform:uppercase;color:#6e8d88}
+.hero-panel .kicker{color:#bce9df}
+.hero-copy h1,.page-title h1,.prediction-hero h1,.result-hero h1{font-size:clamp(30px,4vw,50px);line-height:1.07;margin:10px 0 14px;letter-spacing:-.035em}
+.hero-copy p{max-width:720px;color:#d8f1ed;font-size:16px;line-height:1.7}
+.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.primary-btn{border:0;background:#e5b850;color:#17312e;padding:11px 16px;border-radius:12px;font-weight:850;box-shadow:0 7px 16px rgba(0,0,0,.08)}
+.hero-panel .secondary-btn{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.28);color:#fff}
+.primary-btn.big{padding:15px 22px;font-size:16px}
+.hero-visual{height:260px;position:relative}
+.planet,.atom,.leaf,.moon{position:absolute;display:grid;place-items:center;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);border-radius:50%}
+.planet{width:120px;height:120px;font-size:62px;left:31%;top:24%}.atom{width:64px;height:64px;font-size:34px;left:5%;top:8%}.leaf{width:62px;height:62px;font-size:30px;right:1%;top:20%}.moon{width:54px;height:54px;font-size:30px;right:16%;bottom:3%}
+.orbit{position:absolute;border:1px dashed rgba(255,255,255,.26);border-radius:50%;left:9%;top:4%}.orbit-a{width:230px;height:230px}.orbit-b{width:300px;height:210px;transform:rotate(-20deg)}
+.stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.stat-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px 18px;box-shadow:var(--shadow)}
+.stat-card b{display:block;font-size:28px;letter-spacing:-.03em;color:var(--green)}
+.stat-card span{display:block;font-weight:800}.stat-card small{color:var(--muted);display:block;margin-top:4px}
+.section-head{display:flex;align-items:end;justify-content:space-between;margin:35px 0 14px}.section-head h2{margin:4px 0 0;font-size:25px}
+.timeline-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.year-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:var(--shadow)}
+.year-top{display:flex;justify-content:space-between;align-items:center}.year-top span{font-size:30px;font-weight:900;color:#c2d1cd}.year-top em{font-style:normal;font-size:10px;font-weight:900;padding:6px 8px;border-radius:999px;background:var(--green-soft);color:var(--green)}
+.year-card h3{margin:11px 0 7px}.year-card p{font-size:14px;color:var(--muted);line-height:1.65}.year-card button{border:0;background:transparent;color:var(--green);font-weight:850;padding:7px 0}
+.notice,.warning-card,.source-note{margin-top:20px;background:#fffdf5;border:1px solid #eedda9;border-radius:18px;padding:18px;display:flex;gap:13px;color:#71561c}.notice-icon{width:30px;height:30px;border-radius:50%;background:#f7e7b1;display:grid;place-items:center;font-weight:900;flex:none}.notice p,.warning-card p{margin:3px 0 0;font-size:13px;line-height:1.6}
+.page-title{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}.page-title h1{font-size:36px;margin-top:7px}.page-title p{max-width:820px;color:var(--muted);line-height:1.65;margin:0}
+.progress-mini{background:#fff;border:1px solid var(--line);border-radius:17px;padding:14px 16px;min-width:135px;text-align:right}.progress-mini strong{display:block;font-size:24px;color:var(--green)}.progress-mini span,.progress-mini small{display:block;color:var(--muted);font-size:12px}
+.year-switch{display:flex;gap:8px;flex-wrap:wrap;margin:13px 0}.year-switch button{border:1px solid var(--line);background:#fff;padding:9px 13px;border-radius:10px;font-weight:800;color:#667a76}.year-switch button.active{background:var(--green);color:#fff;border-color:var(--green)}
+.filterbar{display:grid;grid-template-columns:minmax(220px,1fr) 200px 150px auto;gap:9px;background:#fff;border:1px solid var(--line);padding:10px;border-radius:15px;position:sticky;top:88px;z-index:10;box-shadow:0 8px 20px rgba(20,53,48,.07)}
+.filterbar input,.filterbar select{border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:#fbfdfc;color:var(--ink);min-width:0}.filterbar>span{display:flex;align-items:center;color:var(--muted);font-size:13px;padding:0 8px}
+.question-list{display:grid;gap:14px;margin-top:15px}.question-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 5px 18px rgba(18,58,52,.045)}
+.q-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.q-number{font-size:29px;font-weight:950;color:#d2ddda;line-height:1}.q-tags{display:flex;gap:7px;flex-wrap:wrap}.q-tags span{font-size:11px;font-weight:800;border-radius:999px;background:#f1f6f4;color:#5d746f;padding:6px 8px}.q-tags .diff.mudah{background:#edf9f1;color:#33734c}.q-tags .diff.sedang{background:#fff6dd;color:#8a691d}.q-tags .diff.sulit{background:#fff0ee;color:#a53d34}
+.question-card h3{font-size:17px;line-height:1.55;margin:15px 0}.options-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.option-btn{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);background:#fbfdfc;border-radius:13px;padding:12px;text-align:left;color:var(--ink)}.option-btn b{width:26px;height:26px;flex:none;border-radius:8px;background:#edf3f1;display:grid;place-items:center;color:#5c736e}.option-btn:hover:not(:disabled){border-color:#79b8ae;background:#f3fbf9}.option-btn.correct{background:#eaf8f1;border-color:#a8dabe}.option-btn.wrong{background:#fff0ee;border-color:#efb3ad}.option-btn:disabled{cursor:default}
+.q-actions{display:flex;justify-content:space-between;align-items:center;margin-top:12px}.q-actions button{border:0;background:transparent;color:var(--green);font-weight:800;padding:5px}.result-good{color:#15803d;font-weight:800;font-size:13px}.result-bad{color:var(--red);font-weight:800;font-size:13px}
+.explanation{margin-top:12px;background:#f7fbf9;border-left:4px solid var(--green2);padding:14px 16px;border-radius:0 13px 13px 0}.explanation p{margin:4px 0;color:#536b66;font-size:14px}.answer-key{font-size:13px;margin-top:8px;color:#41605a}
+.tryout-setup{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.setup-card{border:1px solid var(--line);background:#fff;border-radius:18px;padding:20px;text-align:left;display:grid;gap:5px}.setup-card>span{font-size:30px;font-weight:900;color:#c9d5d2}.setup-card small{color:var(--muted)}.setup-card.active{border:2px solid var(--green);background:#f2fbf8}.tryout-setup .primary-btn{grid-column:1/-1;justify-self:start;margin-top:6px}
+.exam-top{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px 15px;display:flex;align-items:center;gap:14px;justify-content:space-between;position:sticky;top:88px;z-index:10}.exam-top>div:first-child span{display:block;color:var(--muted);font-size:11px;font-weight:850}.exam-top>div:first-child b{font-size:15px}.timer{font-weight:900;background:#eef8f5;color:var(--green);padding:8px 12px;border-radius:10px}.timer.danger{background:#fff0ee;color:var(--red)}.danger-link{border:0;background:transparent;color:var(--red);font-weight:850}
+.exam-layout{display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:15px;margin-top:14px}.exam-question,.palette{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}.exam-question h2{font-size:21px;line-height:1.5;margin:18px 0}.exam-options{display:grid;gap:10px}.exam-options button{border:1px solid var(--line);background:#fbfdfc;border-radius:13px;padding:13px;display:flex;align-items:flex-start;gap:10px;text-align:left}.exam-options button b{width:28px;height:28px;display:grid;place-items:center;border-radius:8px;background:#edf3f1;flex:none}.exam-options button.selected{background:var(--green-soft);border-color:#7bc4b7}.exam-options button.selected b{background:var(--green);color:#fff}.exam-nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.exam-nav>button:not(.primary-btn){border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px 13px;font-weight:750}.exam-nav button:disabled{opacity:.4}.palette{height:max-content;position:sticky;top:155px}.palette-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin:12px 0}.palette-grid button{aspect-ratio:1;border-radius:9px;border:1px solid var(--line);background:#f9fbfa;color:#6f807c;font-weight:800}.palette-grid button.answered{background:#dff4ee;border-color:#a8d8cc;color:#0e6e64}.palette-grid button.current{outline:2px solid var(--green)}.palette small{color:var(--muted)}
+.result-hero{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;display:grid;grid-template-columns:170px 1fr;gap:25px;align-items:center}.score-ring{width:150px;height:150px;border-radius:50%;background:conic-gradient(var(--green) calc(var(--score)*1%),#e8efed 0);display:grid;place-items:center}.score-ring:before{content:"";position:absolute}.score-ring>div{width:112px;height:112px;border-radius:50%;background:#fff;display:grid;place-content:center;text-align:center}.score-ring b{font-size:42px;line-height:1}.score-ring span{color:var(--muted)}.result-hero h1{font-size:31px}.result-hero p{color:var(--muted)}
+.review-list{display:grid;gap:10px;margin-top:15px}.review-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;display:grid;grid-template-columns:34px 1fr;gap:12px}.review-badge{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:900}.review-badge.good{background:#eaf8f1;color:#15803d}.review-badge.bad{background:#fff0ee;color:var(--red)}.review-card p{margin:5px 0;color:#4f6661}.review-card small{color:var(--muted)}.review-answer{font-size:13px;font-weight:800;color:var(--green);margin-top:6px}.review-exp{font-size:13px}
+.prediction-hero{background:linear-gradient(135deg,#fffaf0,#fff 65%);border:1px solid #ecd9a5;border-radius:24px;padding:30px}.prediction-hero h1{font-size:39px;max-width:900px}.prediction-hero p{max-width:860px;color:#6c756e;line-height:1.7}.prediction-hero .primary-btn{margin-top:13px}
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.focus-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}.focus-card>div{font-size:28px}.focus-card h3{margin:8px 0 4px}.focus-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.chart-card{display:grid;grid-template-columns:.7fr 1.3fr;gap:30px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;margin-top:18px}.chart-card h3{font-size:22px;margin:7px 0}.chart-card p{color:var(--muted);font-size:13px}.bars{display:grid;gap:9px}.bar-row{display:grid;grid-template-columns:130px 1fr 28px;gap:10px;align-items:center;font-size:12px}.bar-row>div{height:10px;border-radius:999px;background:#ecf1ef;overflow:hidden}.bar-row i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--green),#2dd4bf)}.bar-row b{text-align:right;color:#59706b}
+.warning-card{display:block}.material-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.material-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:19px}.material-icon{font-size:28px}.material-card h3{margin:7px 0}.material-card ul{padding-left:18px;margin:9px 0 0;color:#5b716c;font-size:13px;line-height:1.75}
+.study-plan{margin-top:18px;background:linear-gradient(135deg,#0f766e,#0c625c);color:#fff;border-radius:20px;padding:22px;display:grid;grid-template-columns:1fr 1.2fr;gap:20px;align-items:center}.study-plan p{color:#d3ece7;font-size:13px}.study-days{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.study-days span{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.17);border-radius:10px;padding:9px 4px;text-align:center;font-size:10px}.study-days b{display:block;font-size:12px;margin-bottom:3px}
+.source-note{display:block;background:#f5fbf9;border-color:#cfe6df;color:#335b53}.source-note ul{margin:8px 0 0;padding-left:20px;font-size:13px;line-height:1.75}.sources-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}.source-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:14px;display:grid;grid-template-columns:35px 1fr 22px;gap:10px;align-items:center}.source-card>span{font-size:18px;font-weight:900;color:#c3d0cd}.source-card b{display:block;font-size:13px;line-height:1.35}.source-card small{display:block;color:var(--muted);margin-top:4px}.source-card em{font-style:normal;color:var(--green);font-weight:900}.source-card:hover{border-color:#94c9bf;background:#f8fcfb}
+@media(max-width:1050px){.layout{grid-template-columns:80px minmax(0,1fr)}.sidebar{padding:18px 9px}.nav-btn{justify-content:center}.nav-btn span,.sidebar-note{display:none}.hero-panel{grid-template-columns:1fr}.hero-visual{display:none}.stat-grid{grid-template-columns:repeat(2,1fr)}.timeline-grid,.focus-grid,.material-grid{grid-template-columns:1fr 1fr}.exam-layout{grid-template-columns:1fr}.palette{position:static}.chart-card{grid-template-columns:1fr}}
+@media(max-width:720px){.topbar{padding:0 14px;height:68px}.top-actions .ghost-btn{display:none}.brand span{display:none}.layout{display:block}.sidebar{position:sticky;top:68px;z-index:18;min-height:auto;border-right:0;border-bottom:1px solid var(--line);padding:7px;background:#fff;overflow:auto}.sidebar nav{display:flex;min-width:max-content}.nav-btn{padding:9px 11px}.nav-btn span{display:inline}.content{padding:18px 12px 50px}.hero-panel{padding:28px 22px;border-radius:20px;min-height:unset}.hero-copy h1{font-size:31px}.stat-grid,.timeline-grid,.focus-grid,.material-grid,.sources-grid{grid-template-columns:1fr}.page-title{display:block}.progress-mini{margin-top:12px;text-align:left;width:max-content}.filterbar{grid-template-columns:1fr;position:static}.options-grid{grid-template-columns:1fr}.tryout-setup{grid-template-columns:1fr}.tryout-setup .primary-btn{grid-column:auto}.exam-top{top:118px}.exam-top>div:first-child span{display:none}.palette-grid{grid-template-columns:repeat(5,1fr)}.result-hero{grid-template-columns:1fr}.score-ring{margin:auto}.chart-card{padding:17px}.bar-row{grid-template-columns:100px 1fr 25px}.study-plan{grid-template-columns:1fr}.study-days{grid-template-columns:repeat(4,1fr)}.hero-actions .primary-btn,.hero-actions .secondary-btn{width:100%}.q-head{display:block}.q-tags{margin-top:8px}}
+
+
+/* Static vanilla-JS additions */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible{
+  outline:3px solid rgba(15,118,110,.28);
+  outline-offset:2px;
+}
+.empty-state{
+  background:#fff;border:1px dashed var(--line);border-radius:18px;padding:28px;text-align:center;color:var(--muted)
+}
+.static-badge{
+  display:inline-flex;align-items:center;gap:6px;background:#edf9f4;border:1px solid #c9eadf;
+  color:#126b54;padding:7px 10px;border-radius:999px;font-size:11px;font-weight:850
+}
+.offline-card{
+  background:#eef8f5;border:1px solid #cce7df;border-radius:18px;padding:18px;margin-top:18px;color:#355d55
+}
+.offline-card code{background:#fff;padding:2px 6px;border-radius:6px;border:1px solid var(--line)}
+.footer-static{
+  padding:24px 0 0;color:var(--muted);font-size:12px;text-align:center
+}
+.bank-summary{
+  display:flex;gap:8px;flex-wrap:wrap;margin-top:10px
+}
+.bank-summary span{
+  background:#f1f6f4;border:1px solid var(--line);padding:6px 9px;border-radius:999px;font-size:11px;font-weight:800;color:#607670
+}
+.exam-intro{
+  margin-top:12px;padding:13px 14px;border-radius:13px;background:#f7fbf9;border:1px solid var(--line);color:#58706a;font-size:13px
+}
+.result-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.source-card[href="#"]{pointer-events:none;opacity:.72}
+@media(max-width:720px){
+  .live-pill{display:none}
+}
+
+</style>
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <noscript>
+      <div style="max-width:760px;margin:40px auto;padding:20px;font-family:system-ui">
+        Aplikasi ini membutuhkan JavaScript aktif di browser.
+      </div>
+    </noscript>
+  </div>
+
+  <!-- Tidak memakai React, Node.js, npm, bundler, atau framework. -->
+  <script>
+window.KSM_QUESTIONS = [
+  {
+    "year": 2024,
+    "no": 1,
+    "category": "Energi",
+    "integration": "Sains murni",
+    "difficulty": "Mudah",
+    "question": "Sebuah kipas angin mengubah energi listrik terutama menjadi energi ...",
+    "options": [
+      "kimia",
+      "gerak",
+      "cahaya",
+      "potensial"
+    ],
+    "answer": 1,
+    "explanation": "Motor listrik pada kipas mengubah energi listrik menjadi energi gerak pada baling-baling.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 2,
+    "category": "Suhu & Panas",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Sendok logam terasa lebih panas daripada sendok kayu ketika keduanya dicelupkan ke air panas. Penyebab utamanya adalah ...",
+    "options": [
+      "logam menghasilkan panas sendiri",
+      "logam penghantar panas lebih baik",
+      "kayu memiliki suhu nol",
+      "kayu menyerap semua air"
+    ],
+    "answer": 1,
+    "explanation": "Logam memiliki konduktivitas termal lebih tinggi sehingga panas berpindah lebih cepat ke tangan.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 3,
+    "category": "Cahaya",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Pensil yang sebagian dicelupkan ke dalam air tampak bengkok. Peristiwa ini terjadi karena ...",
+    "options": [
+      "pemantulan",
+      "pembiasan",
+      "difraksi",
+      "penguapan"
+    ],
+    "answer": 1,
+    "explanation": "Cahaya berubah arah ketika melewati dua medium berbeda, yaitu udara dan air. Peristiwa itu disebut pembiasan.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 4,
+    "category": "Gaya",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Dua anak mendorong meja dari arah berlawanan. Anak A mendorong 60 N ke kanan dan anak B 45 N ke kiri. Resultan gaya pada meja adalah ...",
+    "options": [
+      "15 N ke kanan",
+      "15 N ke kiri",
+      "105 N ke kanan",
+      "0 N"
+    ],
+    "answer": 0,
+    "explanation": "Gaya berlawanan dikurangkan: 60 - 45 = 15 N, arahnya mengikuti gaya yang lebih besar, yaitu ke kanan.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 5,
+    "category": "Materi",
+    "integration": "Sains murni",
+    "difficulty": "Mudah",
+    "question": "Perubahan yang menghasilkan zat baru adalah ...",
+    "options": [
+      "es mencair",
+      "air menguap",
+      "kertas dibakar",
+      "gula larut"
+    ],
+    "answer": 2,
+    "explanation": "Pembakaran kertas menghasilkan zat baru seperti abu dan gas, sehingga termasuk perubahan kimia.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 6,
+    "category": "Ekologi",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Dalam rantai makanan padi → belalang → katak → ular, jika jumlah belalang turun drastis, perubahan yang paling mungkin terjadi terlebih dahulu adalah ...",
+    "options": [
+      "katak kekurangan makanan",
+      "padi langsung habis",
+      "ular bertambah sangat cepat",
+      "belalang menjadi produsen"
+    ],
+    "answer": 0,
+    "explanation": "Katak merupakan pemangsa langsung belalang, sehingga berkurangnya belalang segera mengurangi sumber makanan katak.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 7,
+    "category": "Biologi",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Bagian paru-paru tempat pertukaran oksigen dan karbon dioksida dengan kapiler darah adalah ...",
+    "options": [
+      "trakea",
+      "bronkus",
+      "alveolus",
+      "diafragma"
+    ],
+    "answer": 2,
+    "explanation": "Alveolus memiliki dinding tipis dan banyak kapiler sehingga cocok untuk pertukaran gas.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 8,
+    "category": "Biologi",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Darah kaya oksigen dari paru-paru menuju jantung melalui ...",
+    "options": [
+      "arteri pulmonalis",
+      "vena pulmonalis",
+      "vena kava",
+      "aorta"
+    ],
+    "answer": 1,
+    "explanation": "Vena pulmonalis membawa darah kaya oksigen dari paru-paru ke atrium kiri.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 9,
+    "category": "Tata Surya",
+    "integration": "Sains murni",
+    "difficulty": "Mudah",
+    "question": "Pergantian siang dan malam terutama disebabkan oleh ...",
+    "options": [
+      "revolusi Bumi",
+      "rotasi Bumi",
+      "rotasi Bulan",
+      "revolusi Matahari"
+    ],
+    "answer": 1,
+    "explanation": "Bumi berputar pada porosnya sekitar 24 jam. Bagian yang menghadap Matahari mengalami siang, bagian lain malam.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 10,
+    "category": "Bumi",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Daerah lereng gundul lebih mudah mengalami longsor saat hujan deras karena ...",
+    "options": [
+      "akar tumbuhan tidak membantu mengikat tanah",
+      "tanah berubah menjadi logam",
+      "air hujan selalu membeku",
+      "angin berhenti bertiup"
+    ],
+    "answer": 0,
+    "explanation": "Akar tumbuhan membantu menahan dan mengikat tanah. Hilangnya vegetasi meningkatkan risiko erosi dan longsor.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 11,
+    "category": "Kelistrikan",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Pada rangkaian seri dua lampu, jika satu lampu putus maka lampu lain juga padam karena ...",
+    "options": [
+      "arus mendapat banyak cabang",
+      "rangkaian menjadi terbuka",
+      "tegangan berubah menjadi nol di baterai",
+      "lampu kedua tidak memiliki filamen"
+    ],
+    "answer": 1,
+    "explanation": "Rangkaian seri hanya mempunyai satu jalur. Ketika satu bagian putus, jalur arus terhenti seluruhnya.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 12,
+    "category": "Kemagnetan",
+    "integration": "Sains murni",
+    "difficulty": "Mudah",
+    "question": "Kutub utara magnet didekatkan ke kutub utara magnet lain. Yang terjadi adalah ...",
+    "options": [
+      "saling tarik",
+      "saling tolak",
+      "keduanya kehilangan massa",
+      "tidak ada gaya sama sekali"
+    ],
+    "answer": 1,
+    "explanation": "Kutub magnet sejenis saling tolak, sedangkan kutub berbeda jenis saling tarik.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 13,
+    "category": "Metode Ilmiah",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Siti ingin mengetahui apakah banyaknya cahaya memengaruhi pertumbuhan kecambah. Variabel yang sebaiknya dibuat berbeda adalah ...",
+    "options": [
+      "jenis biji",
+      "jumlah air",
+      "lama mendapat cahaya",
+      "ukuran pot"
+    ],
+    "answer": 2,
+    "explanation": "Variabel bebas adalah faktor yang sengaja diubah. Dalam eksperimen ini faktor tersebut adalah lama/intensitas cahaya.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 14,
+    "category": "Kesehatan",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Menu yang paling seimbang untuk makan siang adalah ...",
+    "options": [
+      "nasi, ayam, sayur, buah, air",
+      "mi instan dan minuman manis",
+      "keripik dan teh manis",
+      "nasi saja"
+    ],
+    "answer": 0,
+    "explanation": "Menu seimbang memuat sumber karbohidrat, protein, vitamin/mineral, serat, dan cairan.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 15,
+    "category": "Teknologi",
+    "integration": "Sains murni",
+    "difficulty": "Sedang",
+    "question": "Panel surya bermanfaat karena mengubah ...",
+    "options": [
+      "energi cahaya menjadi listrik",
+      "energi listrik menjadi cahaya matahari",
+      "energi kimia menjadi angin",
+      "energi gerak menjadi gravitasi"
+    ],
+    "answer": 0,
+    "explanation": "Sel surya mengubah energi radiasi/cahaya Matahari menjadi energi listrik.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 16,
+    "category": "Tata Surya",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Penentuan awal bulan Hijriah dapat dibantu dengan pengamatan hilal. Faktor alam yang paling langsung memengaruhi keberhasilan pengamatan adalah ...",
+    "options": [
+      "tutupan awan dan posisi Bulan",
+      "warna pakaian pengamat",
+      "jenis kendaraan menuju lokasi",
+      "jumlah meja di lokasi"
+    ],
+    "answer": 0,
+    "explanation": "Hilal perlu berada pada posisi yang memungkinkan diamati dan langit harus cukup cerah. Faktor lain pada opsi tidak memengaruhi visibilitas hilal secara ilmiah.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 17,
+    "category": "Air",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Saat berwudhu, penggunaan air secukupnya juga membantu menjaga sumber daya. Tindakan paling tepat adalah ...",
+    "options": [
+      "membiarkan keran terbuka penuh",
+      "menutup keran ketika tidak digunakan",
+      "mengganti air bersih dengan minuman",
+      "membiarkan air meluap"
+    ],
+    "answer": 1,
+    "explanation": "Menutup keran saat tidak diperlukan mengurangi pemborosan air tanpa mengganggu kebersihan wudhu.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 18,
+    "category": "Kesehatan",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Saat berpuasa, pilihan sahur yang membantu energi bertahan lebih lama adalah ...",
+    "options": [
+      "karbohidrat kompleks, protein, sayur, dan cukup air",
+      "permen saja",
+      "minuman sangat manis saja",
+      "kerupuk saja"
+    ],
+    "answer": 0,
+    "explanation": "Karbohidrat kompleks dan protein memberi energi lebih stabil, sayur memberi serat, dan air membantu hidrasi.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 19,
+    "category": "Energi",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Lampu masjid 20 W dinyalakan 5 jam. Energi listrik yang digunakan adalah ...",
+    "options": [
+      "4 Wh",
+      "25 Wh",
+      "100 Wh",
+      "400 Wh"
+    ],
+    "answer": 2,
+    "explanation": "Energi = daya × waktu = 20 W × 5 jam = 100 Wh.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 20,
+    "category": "Lingkungan",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Menanam pohon di halaman madrasah merupakan tindakan yang membantu menjaga amanah terhadap lingkungan karena pohon ...",
+    "options": [
+      "meningkatkan erosi",
+      "menyerap karbon dioksida dan memberi naungan",
+      "menghilangkan seluruh air tanah",
+      "menghentikan rotasi Bumi"
+    ],
+    "answer": 1,
+    "explanation": "Pohon menyerap CO₂ saat fotosintesis, membantu menurunkan suhu lokal, menahan tanah, serta memberi habitat.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 21,
+    "category": "Budaya & Sains",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Rumah panggung tradisional di daerah rawan banjir memiliki lantai lebih tinggi. Secara ilmiah, desain ini terutama bertujuan ...",
+    "options": [
+      "mendekatkan lantai ke aliran banjir",
+      "mengurangi risiko air masuk ke ruang utama",
+      "membuat rumah lebih berat",
+      "meningkatkan kelembapan"
+    ],
+    "answer": 1,
+    "explanation": "Ketinggian lantai menjauhkan ruang hunian dari genangan dan aliran permukaan.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 22,
+    "category": "Budaya & Materi",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Pembuatan ikan asin tradisional memanfaatkan garam dan penjemuran. Penjemuran memperpanjang daya simpan karena ...",
+    "options": [
+      "menambah kadar air",
+      "mengurangi kadar air sehingga mikroba sulit berkembang",
+      "membuat ikan menjadi logam",
+      "menghilangkan semua zat gizi"
+    ],
+    "answer": 1,
+    "explanation": "Pengeringan menurunkan kadar air yang dibutuhkan banyak mikroorganisme untuk tumbuh.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 23,
+    "category": "Budaya & Energi",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Kincir air tradisional dapat berputar karena memanfaatkan energi ...",
+    "options": [
+      "aliran air",
+      "cahaya Bulan",
+      "magnet permanen Bumi",
+      "bunyi"
+    ],
+    "answer": 0,
+    "explanation": "Gerak aliran air memberikan energi mekanik pada sudu kincir sehingga kincir berputar.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 24,
+    "category": "Budaya & Ekologi",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Sistem terasering pada lahan miring membantu pertanian terutama karena ...",
+    "options": [
+      "mempercepat aliran air",
+      "mengurangi erosi dan memperlambat aliran permukaan",
+      "menghilangkan tanah subur",
+      "mencegah tumbuhan berakar"
+    ],
+    "answer": 1,
+    "explanation": "Terasering memendekkan panjang lereng dan memperlambat aliran air, sehingga erosi berkurang.",
+    "tag": ""
+  },
+  {
+    "year": 2024,
+    "no": 25,
+    "category": "Budaya & Lingkungan",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sulit",
+    "question": "Sebuah desa menjaga hutan adat di daerah hulu sungai. Manfaat ekologis yang paling tepat adalah ...",
+    "options": [
+      "aliran air lebih terkendali dan habitat terjaga",
+      "banjir selalu meningkat",
+      "semua hewan pindah ke kota",
+      "tanah tidak lagi menyerap air"
+    ],
+    "answer": 0,
+    "explanation": "Vegetasi hutan membantu infiltrasi, menahan tanah, mengatur aliran air, dan menyediakan habitat.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 1,
+    "category": "Energi",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Sumber energi yang dapat diperbarui secara alami dalam waktu relatif singkat adalah ...",
+    "options": [
+      "batu bara",
+      "minyak bumi",
+      "angin",
+      "gas alam"
+    ],
+    "answer": 2,
+    "explanation": "Angin terus tersedia melalui proses atmosfer dan termasuk sumber energi terbarukan.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 2,
+    "category": "Energi Surya",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Manfaat utama cahaya Matahari bagi tumbuhan hijau adalah membantu proses ...",
+    "options": [
+      "fotosintesis",
+      "erosi",
+      "pembekuan",
+      "pelapukan logam"
+    ],
+    "answer": 0,
+    "explanation": "Fotosintesis memerlukan energi cahaya untuk membentuk makanan dari air dan karbon dioksida.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 3,
+    "category": "Perubahan Wujud",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Air pakaian basah yang dijemur berkurang karena mengalami ...",
+    "options": [
+      "membeku",
+      "menguap",
+      "mengembun",
+      "menyublim"
+    ],
+    "answer": 1,
+    "explanation": "Air cair berubah menjadi uap air. Perubahan cair ke gas disebut menguap.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 4,
+    "category": "Klasifikasi Hewan",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Hewan yang termasuk herbivora adalah ...",
+    "options": [
+      "elang",
+      "sapi",
+      "harimau",
+      "ular"
+    ],
+    "answer": 1,
+    "explanation": "Herbivora memakan tumbuhan; sapi terutama memakan rumput dan tumbuhan lain.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 5,
+    "category": "Ekosistem",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Pada rantai makanan rumput → belalang → burung → elang, organisme konsumen tingkat I adalah ...",
+    "options": [
+      "rumput",
+      "belalang",
+      "burung",
+      "elang"
+    ],
+    "answer": 1,
+    "explanation": "Belalang memakan produsen (rumput), sehingga menjadi konsumen tingkat I.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 6,
+    "category": "Organ Tubuh",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Organ yang memompa darah ke seluruh tubuh adalah ...",
+    "options": [
+      "paru-paru",
+      "jantung",
+      "ginjal",
+      "lambung"
+    ],
+    "answer": 1,
+    "explanation": "Jantung berkontraksi untuk mendorong darah melalui pembuluh darah.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 7,
+    "category": "Daur Air",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Uap air berubah menjadi titik-titik air membentuk awan. Proses ini disebut ...",
+    "options": [
+      "kondensasi",
+      "infiltrasi",
+      "evaporasi",
+      "sublimasi"
+    ],
+    "answer": 0,
+    "explanation": "Kondensasi atau pengembunan mengubah gas menjadi cair.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 8,
+    "category": "Tanah",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Tanah humus umumnya baik untuk pertanian karena ...",
+    "options": [
+      "kaya bahan organik",
+      "tidak menyimpan air sama sekali",
+      "tersusun hanya dari batu besar",
+      "tidak memiliki unsur hara"
+    ],
+    "answer": 0,
+    "explanation": "Humus terbentuk dari pelapukan bahan organik dan membantu menyediakan unsur hara serta memperbaiki struktur tanah.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 9,
+    "category": "Cuaca",
+    "integration": "IPAS",
+    "difficulty": "Mudah",
+    "question": "Alat yang digunakan untuk mengukur suhu udara adalah ...",
+    "options": [
+      "termometer",
+      "barometer",
+      "anemometer",
+      "dinamometer"
+    ],
+    "answer": 0,
+    "explanation": "Termometer mengukur suhu. Barometer mengukur tekanan udara dan anemometer mengukur kecepatan angin.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 10,
+    "category": "Lingkungan",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Sampah organik daun kering paling tepat dimanfaatkan menjadi ...",
+    "options": [
+      "kompos",
+      "kaca",
+      "bensin",
+      "logam"
+    ],
+    "answer": 0,
+    "explanation": "Daun dapat diuraikan mikroorganisme dan diolah menjadi kompos.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 11,
+    "category": "Gaya",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Alat untuk mengukur besar gaya adalah ...",
+    "options": [
+      "dinamometer",
+      "higrometer",
+      "amperemeter",
+      "gelas ukur"
+    ],
+    "answer": 0,
+    "explanation": "Dinamometer atau neraca pegas digunakan untuk mengukur gaya dalam satuan newton.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 12,
+    "category": "Cahaya",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Bayangan pada cermin datar memiliki sifat ...",
+    "options": [
+      "tegak dan sama besar",
+      "terbalik dan diperkecil",
+      "nyata dan dapat ditangkap layar",
+      "selalu berwarna merah"
+    ],
+    "answer": 0,
+    "explanation": "Cermin datar menghasilkan bayangan maya, tegak, sama besar, dan jaraknya sama dari cermin.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 13,
+    "category": "Sosial",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Kegiatan menghasilkan barang atau jasa disebut kegiatan ...",
+    "options": [
+      "produksi",
+      "konsumsi",
+      "distribusi",
+      "migrasi"
+    ],
+    "answer": 0,
+    "explanation": "Produksi adalah kegiatan menghasilkan atau menambah nilai guna barang/jasa.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 14,
+    "category": "Peta",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Pada peta, simbol garis umumnya digunakan untuk menunjukkan ...",
+    "options": [
+      "jalan atau sungai",
+      "ibu kota saja",
+      "gunung saja",
+      "jumlah penduduk"
+    ],
+    "answer": 0,
+    "explanation": "Unsur memanjang seperti jalan, sungai, dan batas wilayah lazim ditampilkan dengan simbol garis.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 15,
+    "category": "Sumber Daya Alam",
+    "integration": "IPAS",
+    "difficulty": "Sedang",
+    "question": "Tindakan yang paling mendukung kelestarian sumber daya air adalah ...",
+    "options": [
+      "membuang limbah ke sungai",
+      "menanam pohon di daerah resapan",
+      "menutup semua tanah dengan beton",
+      "membiarkan keran bocor"
+    ],
+    "answer": 1,
+    "explanation": "Vegetasi di daerah resapan membantu air masuk ke tanah dan mengurangi limpasan permukaan.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 16,
+    "category": "Islam & Sains",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Saat rukyatul hilal, cuaca berawan tebal dapat menyulitkan pengamatan karena ...",
+    "options": [
+      "cahaya dari hilal terhalang awan",
+      "Bulan berhenti mengorbit",
+      "Matahari tidak terbenam",
+      "Bumi berhenti berotasi"
+    ],
+    "answer": 0,
+    "explanation": "Awan menghalangi jalur cahaya sehingga objek langit sulit terlihat dari permukaan Bumi.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 17,
+    "category": "Islam & Air",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Sebuah bak wudhu berisi 120 liter. Jika 30 orang menggunakan air sama banyak dan seluruh air habis, rata-rata air per orang adalah ...",
+    "options": [
+      "2 L",
+      "3 L",
+      "4 L",
+      "5 L"
+    ],
+    "answer": 2,
+    "explanation": "120 ÷ 30 = 4 liter per orang.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 18,
+    "category": "Islam & Kesehatan",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Ketika berpuasa, tubuh tetap memerlukan air saat sahur dan berbuka terutama untuk ...",
+    "options": [
+      "menjaga keseimbangan cairan tubuh",
+      "menghentikan kerja ginjal",
+      "menghilangkan seluruh garam tubuh",
+      "membekukan darah"
+    ],
+    "answer": 0,
+    "explanation": "Air penting untuk transport zat, pengaturan suhu, dan berbagai reaksi metabolisme.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 19,
+    "category": "Islam & Lingkungan",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Penggunaan lampu LED di masjid lebih hemat energi dibanding lampu pijar karena ...",
+    "options": [
+      "lebih banyak energi berubah menjadi cahaya dan lebih sedikit panas terbuang",
+      "selalu memiliki daya lebih besar",
+      "tidak membutuhkan listrik",
+      "menghasilkan bahan bakar"
+    ],
+    "answer": 0,
+    "explanation": "LED umumnya lebih efisien, sehingga untuk tingkat penerangan yang sebanding membutuhkan daya lebih kecil.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 20,
+    "category": "Islam & Sosial",
+    "integration": "Integrasi Keislaman",
+    "difficulty": "Sedang",
+    "question": "Kegiatan berbagi makanan kepada tetangga dapat memperkuat hubungan sosial karena ...",
+    "options": [
+      "meningkatkan kepedulian dan kerja sama",
+      "mengurangi komunikasi",
+      "membuat semua orang tinggal sendiri",
+      "menghilangkan kebutuhan interaksi"
+    ],
+    "answer": 0,
+    "explanation": "Berbagi dan saling membantu memperkuat ikatan sosial dan rasa peduli.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 21,
+    "category": "Budaya Lokal",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Penggunaan anyaman bambu sebagai dinding rumah di daerah panas dapat membantu kenyamanan karena ...",
+    "options": [
+      "celahnya memungkinkan sirkulasi udara",
+      "bambu selalu menghasilkan es",
+      "bambu tidak pernah menyerap panas",
+      "udara tidak dapat melewati bambu"
+    ],
+    "answer": 0,
+    "explanation": "Desain berpori membantu ventilasi dan pertukaran udara di dalam bangunan.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 22,
+    "category": "Pertanian",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Petani menggunakan pupuk kompos dari sisa tanaman. Manfaat utama bagi tanah adalah ...",
+    "options": [
+      "menambah bahan organik",
+      "menghilangkan semua mikroorganisme",
+      "membuat tanah menjadi plastik",
+      "menurunkan kemampuan menyimpan air sampai nol"
+    ],
+    "answer": 0,
+    "explanation": "Kompos menambah bahan organik, memperbaiki struktur tanah, dan dapat menambah unsur hara.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 23,
+    "category": "Teknologi Tepat Guna",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sedang",
+    "question": "Pompa air tenaga surya paling tepat digunakan ketika tujuan utamanya ...",
+    "options": [
+      "memanfaatkan energi Matahari untuk memindahkan air",
+      "mengubah air menjadi minyak",
+      "menghilangkan gravitasi",
+      "menambah kadar garam air"
+    ],
+    "answer": 0,
+    "explanation": "Panel surya menghasilkan listrik yang dapat menggerakkan motor pompa air.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 24,
+    "category": "Kebencanaan",
+    "integration": "Integrasi Budaya",
+    "difficulty": "Sulit",
+    "question": "Warga pesisir menanam mangrove di garis pantai. Manfaat yang paling tepat adalah ...",
+    "options": [
+      "mengurangi abrasi dan menjadi habitat biota",
+      "meningkatkan gelombang laut",
+      "menghilangkan seluruh garam laut",
+      "membuat air laut menjadi tawar"
+    ],
+    "answer": 0,
+    "explanation": "Akar mangrove membantu menahan sedimen dan meredam energi gelombang, sekaligus menyediakan habitat penting.",
+    "tag": ""
+  },
+  {
+    "year": 2025,
+    "no": 25,
+    "category": "Data & Sains",
+    "integration": "IPAS",
+    "difficulty": "Sulit",
+    "question": "Tiga tanaman diberi volume air yang sama. Tanaman A mendapat cahaya 2 jam/hari, B 6 jam/hari, C 10 jam/hari. Tinggi setelah seminggu berturut-turut 8 cm, 13 cm, dan 12 cm. Kesimpulan paling hati-hati adalah ...",
+    "options": [
+      "pada kondisi ini 6 jam cahaya menghasilkan pertumbuhan tertinggi",
+      "semakin lama cahaya selalu semakin tinggi tanpa batas",
+      "cahaya tidak berpengaruh sama sekali",
+      "tanaman C pasti sakit"
+    ],
+    "answer": 0,
+    "explanation": "Data hanya menunjukkan bahwa pada percobaan tersebut kelompok 6 jam memiliki tinggi tertinggi. Kita tidak boleh membuat klaim universal di luar data.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 1,
+    "category": "Kesehatan",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Seorang anak sesak setelah terkena debu dan saluran napasnya menyempit. Gangguan yang paling sesuai adalah ...",
+    "options": [
+      "asma",
+      "rabun jauh",
+      "diare",
+      "anemia"
+    ],
+    "answer": 0,
+    "explanation": "Asma dapat dipicu alergen seperti debu dan melibatkan penyempitan saluran pernapasan.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 2,
+    "category": "Materi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Suatu zat selalu memenuhi seluruh ruang wadah dan volumenya mudah berubah. Wujud zat tersebut adalah ...",
+    "options": [
+      "padat",
+      "cair",
+      "gas",
+      "kristal"
+    ],
+    "answer": 2,
+    "explanation": "Gas tidak memiliki bentuk dan volume tetap serta partikelnya berjauhan.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 3,
+    "category": "Peta & Sosial",
+    "integration": "Prediksi 2026",
+    "difficulty": "Mudah",
+    "question": "Simbol garis pada peta paling tepat digunakan untuk menggambarkan ...",
+    "options": [
+      "jalan dan sungai",
+      "jumlah penduduk dengan angka",
+      "lokasi satu sekolah sebagai titik",
+      "ketinggian satu gunung sebagai foto"
+    ],
+    "answer": 0,
+    "explanation": "Jalan dan sungai berbentuk memanjang sehingga lazim direpresentasikan dengan simbol garis.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 4,
+    "category": "Sejarah",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Kerajaan Islam di Jawa yang didirikan Raden Patah adalah ...",
+    "options": [
+      "Demak",
+      "Samudera Pasai",
+      "Ternate",
+      "Gowa"
+    ],
+    "answer": 0,
+    "explanation": "Kesultanan Demak dikenal sebagai kerajaan Islam awal di Jawa dan dikaitkan dengan Raden Patah.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 5,
+    "category": "Ekoteologi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Botol plastik bekas diubah menjadi pot tanaman. Tindakan tersebut paling tepat disebut ...",
+    "options": [
+      "recycle",
+      "reduce",
+      "refuse",
+      "landfill"
+    ],
+    "answer": 0,
+    "explanation": "Mengolah barang bekas menjadi produk baru termasuk recycle atau daur ulang.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 6,
+    "category": "Gaya",
+    "integration": "Prediksi 2026",
+    "difficulty": "Mudah",
+    "question": "Besarnya gaya diukur menggunakan ...",
+    "options": [
+      "dinamometer",
+      "termometer",
+      "barometer",
+      "voltmeter"
+    ],
+    "answer": 0,
+    "explanation": "Dinamometer/neraca pegas mengukur gaya dalam satuan newton.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 7,
+    "category": "Islam & Cuaca",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Angin terjadi terutama karena adanya perbedaan ...",
+    "options": [
+      "tekanan udara akibat perbedaan pemanasan",
+      "warna awan",
+      "jumlah pepohonan saja",
+      "fase Bulan"
+    ],
+    "answer": 0,
+    "explanation": "Perbedaan pemanasan menyebabkan perbedaan suhu dan tekanan udara; udara bergerak dari tekanan tinggi ke rendah.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 8,
+    "category": "Perubahan Wujud",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Kapur barus yang lama-kelamaan mengecil tanpa menjadi cair terlebih dahulu mengalami ...",
+    "options": [
+      "sublimasi",
+      "kondensasi",
+      "pembekuan",
+      "peleburan"
+    ],
+    "answer": 0,
+    "explanation": "Sublimasi adalah perubahan padat langsung menjadi gas.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 9,
+    "category": "Ekoteologi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Madrasah ingin mengurangi banjir lokal. Pilihan paling efektif sekaligus ramah lingkungan adalah ...",
+    "options": [
+      "membuat biopori dan memperbanyak vegetasi",
+      "menutup halaman dengan beton penuh",
+      "membuang sampah ke selokan",
+      "mengurangi daerah resapan"
+    ],
+    "answer": 0,
+    "explanation": "Biopori dan vegetasi meningkatkan infiltrasi air serta mengurangi limpasan permukaan.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 10,
+    "category": "Energi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Panel surya 100 W bekerja efektif 5 jam. Energi ideal yang dihasilkan adalah ...",
+    "options": [
+      "20 Wh",
+      "100 Wh",
+      "500 Wh",
+      "5000 Wh"
+    ],
+    "answer": 2,
+    "explanation": "Energi = daya × waktu = 100 W × 5 jam = 500 Wh.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 11,
+    "category": "Teknologi Digital",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Sensor kelembapan tanah pada kebun madrasah paling berguna untuk ...",
+    "options": [
+      "menentukan kapan tanaman perlu disiram",
+      "mengubah tanah menjadi listrik",
+      "mengukur tinggi siswa",
+      "menghitung fase Bulan"
+    ],
+    "answer": 0,
+    "explanation": "Sensor kelembapan memberi data kondisi air dalam tanah sehingga penyiraman dapat lebih efisien.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 12,
+    "category": "Metode Ilmiah",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Untuk menguji pengaruh pupuk kompos terhadap pertumbuhan kacang hijau, variabel yang harus dibuat sama pada semua kelompok adalah ...",
+    "options": [
+      "jumlah kompos",
+      "jenis tanaman dan volume air",
+      "dosis pupuk yang diuji",
+      "perlakuan pupuk"
+    ],
+    "answer": 1,
+    "explanation": "Variabel kontrol harus sama agar perbedaan pertumbuhan terutama dapat dikaitkan dengan dosis kompos.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 13,
+    "category": "Data",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Data penggunaan air kelas A selama 4 hari adalah 80, 75, 60, dan 55 liter. Pernyataan paling tepat adalah ...",
+    "options": [
+      "penggunaan air menunjukkan tren menurun",
+      "penggunaan air selalu tetap",
+      "hari ke-4 paling boros",
+      "tidak ada informasi yang dapat dibandingkan"
+    ],
+    "answer": 0,
+    "explanation": "Nilai berurutan menurun dari 80 menjadi 55 liter, menunjukkan tren penurunan penggunaan air.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 14,
+    "category": "Ekologi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Jika pestisida membunuh sebagian besar serangga pada sawah, burung pemakan serangga kemungkinan ...",
+    "options": [
+      "kekurangan sumber makanan",
+      "langsung menjadi produsen",
+      "jumlahnya pasti meningkat dua kali",
+      "berhenti membutuhkan energi"
+    ],
+    "answer": 0,
+    "explanation": "Penurunan mangsa dapat menurunkan ketersediaan makanan bagi predator seperti burung pemakan serangga.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 15,
+    "category": "Sirkulasi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Urutan aliran darah kaya oksigen yang benar setelah keluar dari paru-paru adalah ...",
+    "options": [
+      "vena pulmonalis → atrium kiri → ventrikel kiri → aorta",
+      "arteri pulmonalis → atrium kanan → aorta",
+      "vena kava → atrium kiri → paru-paru",
+      "aorta → ventrikel kanan → vena pulmonalis"
+    ],
+    "answer": 0,
+    "explanation": "Darah kaya O₂ dari paru kembali melalui vena pulmonalis ke atrium kiri, lalu ventrikel kiri, kemudian aorta.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 16,
+    "category": "Cahaya",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Kaca pembesar dapat membuat benda tampak lebih besar karena menggunakan lensa ...",
+    "options": [
+      "cembung",
+      "cekung",
+      "datar",
+      "buram"
+    ],
+    "answer": 0,
+    "explanation": "Lensa cembung dapat menghasilkan bayangan maya yang diperbesar ketika benda berada di dalam jarak fokus.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 17,
+    "category": "Gaya & Energi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Sebuah troli bermassa lebih kecil ingin memiliki energi kinetik sama seperti sebelumnya. Secara umum kecepatannya harus ...",
+    "options": [
+      "meningkat",
+      "menurun menjadi nol",
+      "selalu tetap",
+      "tidak memiliki hubungan dengan energi"
+    ],
+    "answer": 0,
+    "explanation": "Energi kinetik ½mv². Jika massa turun dan energi tetap, faktor v² harus naik sehingga kecepatan meningkat.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 18,
+    "category": "Bumi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Daerah yang banyak pohon biasanya memiliki suhu siang lebih rendah karena ...",
+    "options": [
+      "naungan dan penguapan air dari tumbuhan",
+      "pohon menghentikan cahaya Matahari seluruh dunia",
+      "akar menghasilkan es",
+      "daun menghilangkan atmosfer"
+    ],
+    "answer": 0,
+    "explanation": "Naungan mengurangi radiasi langsung dan evapotranspirasi membantu pendinginan lingkungan.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 19,
+    "category": "Ekoteologi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Program “satu siswa satu tumbler” di madrasah paling langsung mendukung prinsip ...",
+    "options": [
+      "reduce karena mengurangi botol sekali pakai",
+      "recycle karena membakar plastik",
+      "reuse hanya jika tumbler dibuang",
+      "replace dengan menambah sampah"
+    ],
+    "answer": 0,
+    "explanation": "Menggunakan tumbler menekan penggunaan kemasan sekali pakai dari sumbernya, sehingga termasuk reduce.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 20,
+    "category": "Sosial Ekonomi",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Kelompok warga mengolah sampah organik menjadi kompos lalu menjualnya. Kegiatan ini sekaligus menunjukkan ...",
+    "options": [
+      "pengelolaan lingkungan dan kegiatan produksi",
+      "konsumsi tanpa produksi",
+      "pencemaran tanpa manfaat",
+      "penghilangan seluruh sumber daya"
+    ],
+    "answer": 0,
+    "explanation": "Mereka mengurangi sampah dan menghasilkan barang bernilai ekonomi, yaitu kompos.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 21,
+    "category": "Air & Islam",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Sebuah tempat wudhu memakai keran otomatis yang berhenti ketika tangan menjauh. Manfaat ilmiahnya adalah ...",
+    "options": [
+      "mengurangi pemborosan air",
+      "menambah debit tanpa batas",
+      "membuat air menjadi panas",
+      "menghilangkan kebutuhan sumber air"
+    ],
+    "answer": 0,
+    "explanation": "Keran otomatis membatasi aliran hanya saat diperlukan sehingga penggunaan air lebih efisien.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 22,
+    "category": "Teknologi & Lingkungan",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Drone digunakan untuk memotret kondisi mangrove setiap bulan. Data paling bermanfaat untuk mengetahui perubahan luas mangrove adalah ...",
+    "options": [
+      "perbandingan citra pada lokasi yang sama dari waktu ke waktu",
+      "warna drone",
+      "nama operator",
+      "jumlah baterai cadangan saja"
+    ],
+    "answer": 0,
+    "explanation": "Pemantauan perubahan memerlukan data spasial yang konsisten pada area sama di beberapa waktu.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 23,
+    "category": "Budaya Lokal",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sedang",
+    "question": "Lumbung tradisional dibuat dengan lantai terangkat dari tanah. Salah satu manfaat ilmiah yang masuk akal adalah ...",
+    "options": [
+      "mengurangi kelembapan dan gangguan hewan tanah",
+      "membuat beras selalu membeku",
+      "menghilangkan gravitasi",
+      "meningkatkan genangan air di dalam lumbung"
+    ],
+    "answer": 0,
+    "explanation": "Lantai terangkat membantu sirkulasi udara, mengurangi kontak dengan tanah lembap, dan mengurangi akses beberapa hama.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 24,
+    "category": "Eksperimen",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Tiga bahan penyaring air diuji dengan volume air keruh yang sama. Hasil kejernihan: pasir 60%, arang 80%, kain 40%. Kesimpulan yang benar adalah ...",
+    "options": [
+      "dalam percobaan ini arang memberi hasil kejernihan tertinggi",
+      "arang selalu sempurna untuk semua zat pencemar",
+      "kain tidak memiliki fungsi apa pun",
+      "pasir membuat air 100% aman diminum"
+    ],
+    "answer": 0,
+    "explanation": "Data hanya mendukung perbandingan kejernihan pada kondisi percobaan, bukan jaminan keamanan air atau universalitas hasil.",
+    "tag": ""
+  },
+  {
+    "year": 2026,
+    "no": 25,
+    "category": "Integrasi Besar",
+    "integration": "Prediksi 2026",
+    "difficulty": "Sulit",
+    "question": "Madrasah memiliki masalah sampah, panas halaman, dan konsumsi listrik tinggi. Paket solusi paling terpadu adalah ...",
+    "options": [
+      "pemilahan sampah, penanaman pohon, dan efisiensi listrik",
+      "membakar semua sampah, menebang pohon, menyalakan lampu sepanjang hari",
+      "menutup tanah dengan plastik dan membuang sampah ke sungai",
+      "mengabaikan data penggunaan energi"
+    ],
+    "answer": 0,
+    "explanation": "Solusi terpadu menangani sampah, iklim mikro, dan konsumsi energi sekaligus serta selaras dengan prinsip keberlanjutan.",
+    "tag": ""
+  }
+];
+
+window.KSM_YEAR_META = {
+  2024: {
+    label: 'KSM 2024',
+    status: 'Rekonstruksi latihan',
+    note: 'Bukan salinan naskah resmi. Disusun ulang mengikuti format resmi KSM 2024 tingkat Kabupaten/Kota: 25 pilihan ganda, dengan pola 60% sains murni, 20% integrasi keislaman, dan 20% integrasi budaya.',
+  },
+  2025: {
+    label: 'OMI 2025',
+    status: 'Rekonstruksi berbasis pola',
+    note: 'Mulai 2025 ajang berganti nama menjadi OMI. Bank ini bukan naskah resmi; disusun dari format resmi 25 pilihan ganda dan pola/kisi-kisi publik IPAS MI.',
+  },
+  2026: {
+    label: 'Prediksi OMI 2026',
+    status: 'Prediksi / model latihan',
+    note: 'Bukan bocoran dan bukan soal resmi. Disusun berdasarkan Juknis OMI 2026, karakter soal IPAS terintegrasi, ekoteologi, teknologi, budaya lokal, dan keterampilan analisis data.',
+  },
+}
+
+window.KSM_SOURCES = [
+  {name:'Kementerian Agama RI — OMI 2025 sebelumnya bernama KSM', type:'Resmi', url:'https://kemenag.go.id/nasional/484-siswa-raih-tiket-olimpiade-madrasah-indonesia-tingkat-nasional-cek-pengumuman-di-sini-3SsB5'},
+  {name:'Tirto — bidang & jadwal KSM 2024', type:'Ringkasan Juknis', url:'https://tirto.id/rundown-ksm-tingkat-kab-kota-dan-tahapan-pelaksanaannya-gZ5K'},
+  {name:'Tirto — kisi-kisi materi KSM 2024 MI/SD', type:'Ringkasan Juknis', url:'https://tirto.id/kisi-kisi-materi-soal-ksm-2024-jenjang-mi-mts-hingga-ma-gZ3U'},
+  {name:'Juknis OMI 2025 — format 25 PG Kab/Kota', type:'Dokumen publik', url:'https://id.scribd.com/document/973386809/Tl-Juknis-Omi-2025'},
+  {name:'Kemenag Yogyakarta — OMI 2025 MI/SD Matematika & IPAS', type:'Resmi daerah', url:'https://yogyakartakota.kemenag.go.id/kepala-kemenag-kota-yogyakarta-h-ahmad-shidqi-resmi-buka-olimpiade-madrasah-indonesia-di-man-2-yogyakarta/'},
+  {name:'Kemenag — OMI 2026 tingkat Kab/Kota dan cabang MI/SD', type:'Resmi daerah', url:'https://yogyakartakota.kemenag.go.id/omi-2026-dibuka-kemenag-yogyakarta-dorong-talenta-madrasah-berprestasi/'},
+  {name:'Tirto — format dan contoh IPAS MI OMI 2026', type:'Referensi latihan', url:'https://tirto.id/contoh-soal-ipas-terintegrasi-mi-omi-kemenag-2026-opsi-jawaban-hB8L'},
+  {name:'Kampus Madrasah — arah IPAS MI OMI 2026', type:'Referensi latihan', url:'https://www.kampusmadrasah.com/2026/09/soal-omi-ipas-terintegrasi-jenjang-mi.html'},
+]
+
+</script>
+  <script>
+
+(() => {
+  'use strict';
+
+  const questions = window.KSM_QUESTIONS || [];
+  const yearMeta = window.KSM_YEAR_META || {};
+  const sources = window.KSM_SOURCES || [];
+
+  const categoryIcons = {
+    'Energi':'⚡','Suhu & Panas':'🌡️','Cahaya':'🔎','Gaya':'🧲','Materi':'🧪','Ekologi':'🌿','Biologi':'🫀',
+    'Tata Surya':'🌙','Bumi':'🌍','Kelistrikan':'🔌','Kemagnetan':'🧲','Metode Ilmiah':'🔬','Kesehatan':'🩺',
+    'Teknologi':'💡','Air':'💧','Lingkungan':'♻️','Budaya & Sains':'🏠','Budaya & Materi':'🧺',
+    'Budaya & Energi':'🌊','Budaya & Ekologi':'🌾','Budaya & Lingkungan':'🌳','Energi Surya':'☀️',
+    'Perubahan Wujud':'💨','Klasifikasi Hewan':'🐄','Ekosistem':'🕸️','Organ Tubuh':'🫁','Daur Air':'🌧️',
+    'Tanah':'🌱','Cuaca':'☁️','Sosial':'🤝','Peta':'🗺️','Sumber Daya Alam':'💧','Islam & Sains':'🌙',
+    'Islam & Air':'💧','Islam & Kesehatan':'🥗','Islam & Lingkungan':'🌿','Islam & Sosial':'🤲',
+    'Budaya Lokal':'🏡','Pertanian':'🌾','Teknologi Tepat Guna':'⚙️','Kebencanaan':'🌊','Data & Sains':'📊',
+    'Peta & Sosial':'🗺️','Sejarah':'🏛️','Ekoteologi':'🌱','Islam & Cuaca':'🌬️','Teknologi Digital':'📡',
+    'Data':'📈','Sirkulasi':'❤️','Gaya & Energi':'🚚','Sosial Ekonomi':'🛒','Air & Islam':'🚰',
+    'Teknologi & Lingkungan':'🛰️','Eksperimen':'🧫','Integrasi Besar':'🎯'
+  };
+
+  const navItems = [
+    ['dashboard','⌂','Beranda'],
+    ['bank','▤','Bank Soal'],
+    ['tryout','◉','Tryout 25'],
+    ['prediksi','✦','Prediksi 2026'],
+    ['materi','◇','Peta Materi'],
+    ['sources','↗','Sumber']
+  ];
+
+  const state = {
+    page: 'dashboard',
+    selectedYear: 2026,
+    query: '',
+    category: 'Semua',
+    difficulty: 'Semua',
+    revealed: {},
+    bankAnswers: readStorage('ksm-bank-answers', {}),
+    tryout: {
+      year: 2026,
+      started: false,
+      index: 0,
+      answers: {},
+      submitted: false,
+      seconds: 45 * 60,
+      timerId: null
+    }
+  };
+
+  const app = document.getElementById('app');
+
+  function esc(value) {
+    return String(value ?? '')
+      .replaceAll('&','&amp;')
+      .replaceAll('<','&lt;')
+      .replaceAll('>','&gt;')
+      .replaceAll('"','&quot;')
+      .replaceAll("'","&#039;");
+  }
+
+  function readStorage(key, fallback) {
+    try {
+      const v = JSON.parse(localStorage.getItem(key));
+      return v || fallback;
+    } catch (_) {
+      return fallback;
+    }
+  }
+
+  function writeStorage(key, value) {
+    try { localStorage.setItem(key, JSON.stringify(value)); } catch (_) {}
+  }
+
+  function formatTime(s) {
+    const m = Math.floor(s / 60);
+    const ss = s % 60;
+    return String(m).padStart(2,'0') + ':' + String(ss).padStart(2,'0');
+  }
+
+  function broadGroup(c) {
+    if (/Ekoteologi|Lingkungan|Bumi|Air|Ekologi/.test(c)) return 'Lingkungan';
+    if (/Kesehatan|Sirkulasi|Biologi/.test(c)) return 'Biologi';
+    if (/Gaya|Energi|Cahaya|Materi|Wujud/.test(c)) return 'Fisika';
+    if (/Data|Metode|Eksperimen/.test(c)) return 'Data & eksperimen';
+    if (/Teknologi/.test(c)) return 'Teknologi';
+    return 'Sosial & integrasi';
+  }
+
+  function countGroups(arr, fn) {
+    return arr.reduce((acc, item) => {
+      const k = fn(item);
+      acc[k] = (acc[k] || 0) + 1;
+      return acc;
+    }, {});
+  }
+
+  function materialItems(group) {
+    const data = {
+      'Energi & Fisika':['gaya & gerak','energi dan perubahannya','panas & suhu','cahaya','listrik & magnet','materi & perubahan wujud'],
+      'Makhluk Hidup':['klasifikasi organisme','organ & fisiologi manusia','sirkulasi & pernapasan','gizi & kesehatan','adaptasi & reproduksi','rantai makanan'],
+      'Lingkungan & Bumi':['ekologi','sumber daya alam','air & daur air','tanah & erosi','cuaca','Bumi, tata surya & antariksa'],
+      'Metode & Data':['variabel eksperimen','kontrol & perlakuan','membaca tabel/grafik','hubungan sebab-akibat','kesimpulan dari bukti','evaluasi solusi'],
+      'Sosial & Budaya':['peta & simbol','produksi-distribusi-konsumsi','kearifan lokal','teknologi tepat guna','sejarah & masyarakat','mitigasi bencana'],
+      'Integrasi Keislaman':['air & wudhu','puasa & kesehatan','rukyatul hilal','amanah lingkungan','hemat energi','nilai kepedulian & sosial']
+    };
+    return data[group] || [];
+  }
+
+  function groupIcon(group) {
+    return ({
+      'Energi & Fisika':'⚡','Makhluk Hidup':'🫀','Lingkungan & Bumi':'🌍',
+      'Metode & Data':'📊','Sosial & Budaya':'🏡','Integrasi Keislaman':'☾'
+    })[group] || '🔬';
+  }
+
+  function shell(content) {
+    const nav = navItems.map(([id, icon, label]) => `
+      <button class="nav-btn ${state.page === id ? 'active' : ''}" data-nav="${id}">
+        ${icon}<span>${label}</span>
+      </button>`).join('');
+
+    return `
+      <header class="topbar">
+        <div class="brand" data-nav="dashboard" role="button" tabindex="0">
+          <div class="brand-mark">MI</div>
+          <div><strong>KSM/OMI Smart Prep</strong><span>IPAS Terintegrasi • Kabupaten/Kota</span></div>
+        </div>
+        <div class="top-actions">
+          <span class="static-badge">HTML + JavaScript murni</span>
+          <span class="live-pill"><i></i> Edisi 2026</span>
+          <button class="ghost-btn" data-action="reset-progress">Reset progres</button>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <nav>${nav}</nav>
+          <div class="sidebar-note">
+            <b>Catatan integritas</b>
+            <p>Bank 2024–2025 adalah rekonstruksi latihan dari pola/kisi-kisi publik, bukan salinan naskah resmi. Prediksi 2026 bukan bocoran.</p>
+          </div>
+        </aside>
+        <main class="content">
+          ${content}
+          <div class="footer-static">Static site • tanpa Node.js • tanpa npm • siap GitHub Pages</div>
+        </main>
+      </div>`;
+  }
+
+  function render() {
+    stopTryoutTimer();
+
+    let content = '';
+    switch (state.page) {
+      case 'bank': content = renderBank(); break;
+      case 'tryout': content = renderTryout(); break;
+      case 'prediksi': content = renderPrediction(); break;
+      case 'materi': content = renderMateri(); break;
+      case 'sources': content = renderSources(); break;
+      default: content = renderDashboard();
+    }
+
+    app.innerHTML = shell(content);
+    bindControls();
+
+    if (state.page === 'tryout' && state.tryout.started && !state.tryout.submitted) {
+      startTryoutTimer();
+    }
+  }
+
+  function renderDashboard() {
+    return `
+      <section class="hero-panel">
+        <div class="hero-copy">
+          <span class="kicker">PUSAT LATIHAN IPAS MI/SD</span>
+          <h1>Belajar pola KSM 2024, OMI 2025, dan bersiap untuk OMI 2026.</h1>
+          <p>75 soal latihan orisinal dengan pembahasan, tryout 25 soal, analisis topik, dan prediksi fokus 2026.</p>
+          <div class="hero-actions">
+            <button class="primary-btn" data-action="start-2026">Mulai Tryout 2026</button>
+            <button class="secondary-btn" data-nav="bank">Jelajahi bank soal</button>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="planet">🌍</div><div class="atom">⚛</div><div class="leaf">🌿</div><div class="moon">☾</div>
+        </div>
+      </section>
+
+      <section class="stat-grid">
+        ${statCard('25','Soal per paket','format latihan Kabupaten/Kota')}
+        ${statCard('75','Total soal latihan','2024 • 2025 • 2026')}
+        ${statCard('6+','Kelompok materi','sains, IPAS, Islam, budaya')}
+        ${statCard('100%','Ada pembahasan','setelah menjawab')}
+      </section>
+
+      <section class="section-head"><div><span class="eyebrow">TIMELINE</span><h2>Apa yang berubah?</h2></div></section>
+      <section class="timeline-grid">
+        ${yearCard(2024,'KSM 2024','KSM','Jenjang MI memakai IPAS Terintegrasi. Paket latihan mengikuti format 25 pilihan ganda dan karakter integrasi sains, keislaman, serta budaya.')}
+        ${yearCard(2025,'OMI 2025','TRANSISI','KSM bertransformasi menjadi Olimpiade Madrasah Indonesia (OMI). Untuk MI/SD, bidang sains mencakup Matematika dan IPAS.')}
+        ${yearCard(2026,'OMI 2026','PREDIKSI','Latihan menonjolkan integrasi Islam, sains, ekoteologi, teknologi, kearifan lokal, lingkungan, dan analisis stimulus/data.')}
+      </section>
+
+      <section class="notice">
+        <div class="notice-icon">✓</div>
+        <div>
+          <b>Metodologi transparan</b>
+          <p>Arsip soal asli lengkap 2024–2025 tidak tersedia secara konsisten dari sumber resmi terbuka pada proyek awal. Karena itu aplikasi tidak mengklaim menyalin soal resmi; bank latihan direkonstruksi secara orisinal dari pola, kisi-kisi, dan karakter kompetisi.</p>
+        </div>
+      </section>
+
+      <section class="offline-card">
+        <b>Siap dipasang di GitHub Pages tanpa instalasi apa pun.</b>
+        <p>Cukup unggah <code>index.html</code>, <code>styles.css</code>, <code>data.js</code>, dan <code>app.js</code> ke repository. Browser akan menjalankan semuanya secara langsung.</p>
+      </section>`;
+  }
+
+  function statCard(n,label,note) {
+    return `<div class="stat-card"><b>${n}</b><span>${label}</span><small>${note}</small></div>`;
+  }
+
+  function yearCard(year,title,badge,text) {
+    const action = year === 2026 ? 'prediction-year' : 'bank-year';
+    return `<article class="year-card">
+      <div class="year-top"><span>${year}</span><em>${badge}</em></div>
+      <h3>${title}</h3><p>${text}</p>
+      <button data-action="${action}" data-year="${year}">${year === 2026 ? 'Lihat prediksi' : 'Buka paket'} →</button>
+    </article>`;
+  }
+
+  function renderBank() {
+    const year = state.selectedYear;
+    const meta = yearMeta[year] || {label:String(year), note:''};
+    const yearQs = questions.filter(q => q.year === year);
+    const categories = ['Semua', ...new Set(yearQs.map(q => q.category))];
+    const qneedle = state.query.trim().toLowerCase();
+
+    const filtered = yearQs.filter(q => {
+      const hay = (q.question + ' ' + q.category + ' ' + q.integration).toLowerCase();
+      return (state.category === 'Semua' || q.category === state.category)
+        && (state.difficulty === 'Semua' || q.difficulty === state.difficulty)
+        && hay.includes(qneedle);
+    });
+
+    const answeredKeys = Object.keys(state.bankAnswers).filter(k => k.startsWith(year + '-'));
+    const answeredCount = answeredKeys.length;
+    const correctCount = answeredKeys.filter(k => state.bankAnswers[k]?.correct).length;
+
+    const cards = filtered.map(q => {
+      const key = `${q.year}-${q.no}`;
+      const answered = state.bankAnswers[key];
+      const show = !!state.revealed[key] || !!answered;
+
+      const opts = q.options.map((opt,i) => {
+        let cls = 'option-btn';
+        if (answered) {
+          if (i === q.answer) cls += ' correct';
+          else if (i === answered.choice) cls += ' wrong';
+        }
+        return `<button class="${cls}" data-action="bank-answer" data-year="${q.year}" data-no="${q.no}" data-choice="${i}" ${answered ? 'disabled' : ''}>
+          <b>${String.fromCharCode(65+i)}</b><span>${esc(opt)}</span>
+        </button>`;
+      }).join('');
+
+      return `<article class="question-card">
+        <div class="q-head">
+          <div class="q-number">${String(q.no).padStart(2,'0')}</div>
+          <div class="q-tags">
+            <span>${categoryIcons[q.category] || '🔬'} ${esc(q.category)}</span>
+            <span>${esc(q.integration)}</span>
+            <span class="diff ${q.difficulty.toLowerCase()}">${esc(q.difficulty)}</span>
+          </div>
+        </div>
+        <h3>${esc(q.question)}</h3>
+        <div class="options-grid">${opts}</div>
+        <div class="q-actions">
+          <button data-action="toggle-explanation" data-key="${key}">${show ? 'Sembunyikan pembahasan' : 'Lihat pembahasan'}</button>
+          ${answered ? `<span class="${answered.correct ? 'result-good' : 'result-bad'}">${answered.correct ? '✓ Benar' : '× Belum tepat'}</span>` : ''}
+        </div>
+        ${show ? `<div class="explanation"><b>Pembahasan</b><p>${esc(q.explanation)}</p><div class="answer-key">Jawaban: <strong>${String.fromCharCode(65+q.answer)}. ${esc(q.options[q.answer])}</strong></div></div>` : ''}
+      </article>`;
+    }).join('');
+
+    return `
+      <section class="page-title">
+        <div><span class="eyebrow">BANK SOAL</span><h1>${esc(meta.label)}</h1><p>${esc(meta.note)}</p></div>
+        <div class="progress-mini"><strong>${answeredCount}/25</strong><span>dikerjakan</span><small>${answeredCount ? Math.round(correctCount/answeredCount*100) : 0}% benar</small></div>
+      </section>
+
+      <div class="year-switch">
+        ${[2024,2025,2026].map(y => `<button class="${year===y?'active':''}" data-action="switch-bank-year" data-year="${y}">${esc(yearMeta[y]?.label || y)}</button>`).join('')}
+      </div>
+
+      <section class="filterbar">
+        <input id="bankSearch" aria-label="Cari soal" value="${esc(state.query)}" placeholder="Cari topik atau kata kunci...">
+        <select id="categoryFilter">${categories.map(c=>`<option ${c===state.category?'selected':''}>${esc(c)}</option>`).join('')}</select>
+        <select id="difficultyFilter">
+          ${['Semua','Mudah','Sedang','Sulit'].map(d=>`<option ${d===state.difficulty?'selected':''}>${d}</option>`).join('')}
+        </select>
+        <span>${filtered.length} soal</span>
+      </section>
+
+      <div class="bank-summary">
+        <span>${answeredCount} sudah dijawab</span>
+        <span>${correctCount} benar</span>
+        <span>${answeredCount-correctCount} perlu diulang</span>
+      </div>
+
+      <div class="question-list">
+        ${cards || `<div class="empty-state"><b>Tidak ada soal yang cocok.</b><p>Coba ubah pencarian atau filter.</p></div>`}
+      </div>`;
+  }
+
+  function renderTryout() {
+    const t = state.tryout;
+    const set = questions.filter(q => q.year === t.year).sort((a,b)=>a.no-b.no);
+
+    if (!t.started) {
+      return `
+        <section class="page-title"><div><span class="eyebrow">TRYOUT INTERAKTIF</span><h1>Simulasi 25 soal</h1><p>Mode pembinaan dengan waktu 45 menit. Jawaban tidak ditampilkan sampai tryout selesai.</p></div></section>
+        <div class="tryout-setup">
+          ${[2024,2025,2026].map(y=>`
+            <button class="setup-card ${t.year===y?'active':''}" data-action="choose-tryout-year" data-year="${y}">
+              <span>${y}</span><b>${esc(yearMeta[y]?.label || y)}</b><small>25 soal • 45 menit</small>
+            </button>`).join('')}
+          <button class="primary-btn big" data-action="start-tryout">Mulai tryout ${t.year} →</button>
+        </div>
+        <div class="exam-intro"><b>Tips:</b> kerjakan yang mudah dulu. Gunakan panel nomor untuk melompat soal. Progres tersimpan selama halaman tidak direfresh.</div>`;
+    }
+
+    const score = Object.entries(t.answers).filter(([no,v]) => set.find(q=>q.no===Number(no))?.answer === v).length;
+
+    if (t.submitted) {
+      return renderResult(t.year,set,t.answers,score);
+    }
+
+    const q = set[t.index];
+    if (!q) return `<div class="empty-state">Paket soal tidak ditemukan.</div>`;
+
+    return `
+      <section class="exam-top">
+        <div><span>TRYOUT ${t.year}</span><b>Soal ${t.index+1} dari ${set.length}</b></div>
+        <div id="timerText" class="timer ${t.seconds<300?'danger':''}">⏱ ${formatTime(t.seconds)}</div>
+        <button class="danger-link" data-action="submit-tryout">Akhiri</button>
+      </section>
+
+      <div class="exam-layout">
+        <article class="exam-question">
+          <div class="q-tags"><span>${categoryIcons[q.category] || '🔬'} ${esc(q.category)}</span><span>${esc(q.difficulty)}</span></div>
+          <h2>${esc(q.question)}</h2>
+          <div class="exam-options">
+            ${q.options.map((o,i)=>`
+              <button class="${t.answers[q.no]===i?'selected':''}" data-action="tryout-answer" data-no="${q.no}" data-choice="${i}">
+                <b>${String.fromCharCode(65+i)}</b><span>${esc(o)}</span>
+              </button>`).join('')}
+          </div>
+          <div class="exam-nav">
+            <button ${t.index===0?'disabled':''} data-action="tryout-prev">← Sebelumnya</button>
+            ${t.index<set.length-1
+              ? `<button class="primary-btn" data-action="tryout-next">Berikutnya →</button>`
+              : `<button class="primary-btn" data-action="submit-tryout">Selesai & nilai</button>`}
+          </div>
+        </article>
+
+        <aside class="palette">
+          <b>Navigasi soal</b>
+          <div class="palette-grid">
+            ${set.map((x,i)=>`<button class="${i===t.index?'current ':''}${t.answers[x.no]!==undefined?'answered':''}" data-action="goto-question" data-index="${i}">${x.no}</button>`).join('')}
+          </div>
+          <small>${Object.keys(t.answers).length} terjawab • ${set.length-Object.keys(t.answers).length} kosong</small>
+        </aside>
+      </div>`;
+  }
+
+  function renderResult(year,set,answers,score) {
+    const pct = Math.round(score / set.length * 100);
+    const headline = pct >= 80 ? 'Mumtaz! Pertahankan.' : pct >= 60 ? 'Bagus, tinggal perkuat beberapa topik.' : 'Fondasi sudah ada — lanjutkan latihan terarah.';
+
+    const review = set.map(q => {
+      const a = answers[q.no];
+      const ok = a === q.answer;
+      return `<article class="review-card">
+        <div class="review-badge ${ok?'good':'bad'}">${ok?'✓':'×'}</div>
+        <div>
+          <b>Soal ${q.no} • ${esc(q.category)}</b>
+          <p>${esc(q.question)}</p>
+          <small>Jawabanmu: ${a===undefined?'Tidak dijawab':String.fromCharCode(65+a)+'. '+esc(q.options[a])}</small>
+          <div class="review-answer">Kunci: ${String.fromCharCode(65+q.answer)}. ${esc(q.options[q.answer])}</div>
+          <p class="review-exp">${esc(q.explanation)}</p>
+        </div>
+      </article>`;
+    }).join('');
+
+    return `
+      <section class="result-hero">
+        <div class="score-ring" style="--score:${pct}"><div><b>${score}</b><span>/${set.length}</span></div></div>
+        <div><span class="eyebrow">HASIL TRYOUT ${year}</span><h1>${headline}</h1>
+          <p>Skor latihan: <b>${pct}%</b>. Tinjau pembahasan untuk menemukan topik yang perlu diulang.</p>
+          <div class="result-actions">
+            <button class="primary-btn" data-action="reset-tryout">Ulangi tryout</button>
+            <button class="secondary-btn" data-action="result-to-bank" data-year="${year}">Latihan per soal</button>
+          </div>
+        </div>
+      </section>
+      <div class="review-list">${review}</div>`;
+  }
+
+  function renderPrediction() {
+    const pred = questions.filter(q=>q.year===2026);
+    const cats = countGroups(pred, q=>broadGroup(q.category));
+
+    return `
+      <section class="prediction-hero">
+        <span class="eyebrow">PREDIKSI 2026 • BUKAN BOCORAN</span>
+        <h1>Fokus pada analisis, ekoteologi, data, dan penerapan IPAS.</h1>
+        <p>Model prediksi adalah latihan orisinal. Arah latihan memadukan Islam, teknologi, budaya lokal, kepedulian lingkungan, dan keterampilan proses sains.</p>
+        <button class="primary-btn" data-action="open-2026-bank">Buka 25 soal prediksi</button>
+      </section>
+
+      <section class="section-head"><div><span class="eyebrow">FOKUS LATIHAN</span><h2>Peta prioritas 2026</h2></div></section>
+      <div class="focus-grid">
+        ${focus('🌱','Ekoteologi & lingkungan','Sampah, air, vegetasi, konservasi, perubahan lingkungan, dan solusi berkelanjutan.')}
+        ${focus('📊','Data & metode ilmiah','Membaca tabel, tren, variabel eksperimen, dan kesimpulan yang tidak berlebihan.')}
+        ${focus('⚡','Fisika kontekstual','Energi, gaya, panas, cahaya, perubahan wujud, dan kelistrikan dalam kehidupan nyata.')}
+        ${focus('🫀','Makhluk hidup & kesehatan','Organ, sirkulasi, ekologi, adaptasi, gizi, dan keterkaitan antar-sistem.')}
+        ${focus('🛰️','Teknologi terapan','Sensor, energi surya, pemantauan lingkungan, teknologi tepat guna, dan digitalisasi.')}
+        ${focus('🏡','Budaya & sosial','Kearifan lokal, peta, sejarah, ekonomi sederhana, dan budaya sebagai konteks sains.')}
+      </div>
+
+      <section class="chart-card">
+        <div><span class="eyebrow">DISTRIBUSI MODEL PREDIKSI</span><h3>Komposisi 25 soal latihan</h3><p>Ini adalah komposisi desain latihan, bukan persentase resmi panitia.</p></div>
+        <div class="bars">
+          ${Object.entries(cats).map(([k,v])=>`<div class="bar-row"><span>${esc(k)}</span><div><i style="width:${v/25*100}%"></i></div><b>${v}</b></div>`).join('')}
+        </div>
+      </section>
+
+      <div class="warning-card"><b>Kenapa tidak disebut “soal asli 2026”?</b><p>Prediksi yang bertanggung jawab membantu memahami kompetensi dan pola soal, bukan mengklaim memperoleh naskah kompetisi.</p></div>`;
+  }
+
+  function focus(icon,title,text) {
+    return `<article class="focus-card"><div>${icon}</div><h3>${title}</h3><p>${text}</p></article>`;
+  }
+
+  function renderMateri() {
+    const groups = ['Energi & Fisika','Makhluk Hidup','Lingkungan & Bumi','Metode & Data','Sosial & Budaya','Integrasi Keislaman'];
+    return `
+      <section class="page-title"><div><span class="eyebrow">PETA MATERI</span><h1>Belajar berdasarkan konsep, bukan hafalan jawaban.</h1><p>Gunakan peta ini sebagai checklist pembinaan sebelum tryout.</p></div></section>
+      <div class="material-grid">
+        ${groups.map(g=>`<article class="material-card"><div class="material-icon">${groupIcon(g)}</div><h3>${g}</h3><ul>${materialItems(g).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></article>`).join('')}
+      </div>
+      <div class="study-plan">
+        <div><b>Rencana belajar 7 hari</b><p>Hari 1–4: kuasai konsep per kelompok. Hari 5: latihan data dan integrasi. Hari 6: tryout 25 soal. Hari 7: tinjau salah, ulang topik lemah, lalu tryout kedua.</p></div>
+        <div class="study-days">${['Konsep','Biologi','Bumi','Data','Integrasi','Tryout','Review'].map((x,i)=>`<span><b>H${i+1}</b>${x}</span>`).join('')}</div>
+      </div>`;
+  }
+
+  function renderSources() {
+    const cards = sources.map((s,i)=>`
+      <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" class="source-card">
+        <span>${String(i+1).padStart(2,'0')}</span>
+        <div><b>${esc(s.name)}</b><small>${esc(s.type)}</small></div>
+        <em>↗</em>
+      </a>`).join('');
+
+    return `
+      <section class="page-title"><div><span class="eyebrow">SUMBER & METODOLOGI</span><h1>Apa yang benar-benar didukung sumber?</h1><p>Aplikasi membedakan informasi resmi, ringkasan Juknis, dan bahan latihan publik.</p></div></section>
+      <div class="source-note">
+        <b>Temuan utama dari riset proyek sebelumnya</b>
+        <ul>
+          <li>2024: kategori MI memakai IPAS Terintegrasi dan paket Kabupaten/Kota berbentuk pilihan ganda.</li>
+          <li>2025: ajang bertransformasi menjadi OMI; MI/SD tetap memiliki Matematika dan IPAS.</li>
+          <li>2026: latihan diarahkan pada integrasi sains, Islam, teknologi, budaya, lingkungan/ekoteologi, dan pemecahan masalah.</li>
+        </ul>
+      </div>
+      <div class="sources-grid">${cards}</div>
+      <div class="warning-card"><b>Hak cipta & keaslian</b><p>Bank 2024–2025 adalah soal latihan orisinal yang merekonstruksi pola kompetensi. Prediksi 2026 bukan soal resmi dan bukan bocoran.</p></div>`;
+  }
+
+  function bindControls() {
+    app.querySelectorAll('[data-nav]').forEach(el => {
+      el.addEventListener('click', () => {
+        const page = el.dataset.nav;
+        if (page) {
+          state.page = page;
+          render();
+          window.scrollTo({top:0,behavior:'smooth'});
+        }
+      });
+      el.addEventListener('keydown', e => {
+        if ((e.key === 'Enter' || e.key === ' ') && el.dataset.nav) {
+          e.preventDefault();
+          state.page = el.dataset.nav;
+          render();
+        }
+      });
+    });
+
+    app.querySelectorAll('[data-action]').forEach(el => {
+      el.addEventListener('click', () => handleAction(el));
+    });
+
+    const search = document.getElementById('bankSearch');
+    if (search) {
+      search.addEventListener('input', e => {
+        state.query = e.target.value;
+        const pos = e.target.selectionStart;
+        render();
+        const s2 = document.getElementById('bankSearch');
+        if (s2) { s2.focus(); try{s2.setSelectionRange(pos,pos)}catch(_){} }
+      });
+    }
+
+    const cat = document.getElementById('categoryFilter');
+    if (cat) cat.addEventListener('change', e => {state.category=e.target.value;render();});
+
+    const diff = document.getElementById('difficultyFilter');
+    if (diff) diff.addEventListener('change', e => {state.difficulty=e.target.value;render();});
+  }
+
+  function handleAction(el) {
+    const action = el.dataset.action;
+
+    if (action === 'reset-progress') {
+      if (confirm('Reset seluruh progres bank soal?')) {
+        state.bankAnswers = {};
+        state.revealed = {};
+        writeStorage('ksm-bank-answers', state.bankAnswers);
+        render();
+      }
+      return;
+    }
+
+    if (action === 'start-2026') {
+      state.tryout.year = 2026;
+      resetTryout(false);
+      state.page = 'tryout';
+      state.tryout.started = true;
+      render();
+      return;
+    }
+
+    if (action === 'bank-year') {
+      state.selectedYear = Number(el.dataset.year);
+      state.page = 'bank';
+      resetBankFilters();
+      render();
+      return;
+    }
+
+    if (action === 'prediction-year') {
+      state.page = 'prediksi';
+      render();
+      return;
+    }
+
+    if (action === 'switch-bank-year') {
+      state.selectedYear = Number(el.dataset.year);
+      resetBankFilters();
+      render();
+      return;
+    }
+
+    if (action === 'bank-answer') {
+      const year = Number(el.dataset.year);
+      const no = Number(el.dataset.no);
+      const choice = Number(el.dataset.choice);
+      const q = questions.find(x=>x.year===year && x.no===no);
+      if (!q) return;
+      const key = `${year}-${no}`;
+      if (state.bankAnswers[key]) return;
+      state.bankAnswers[key] = {choice, correct: choice === q.answer};
+      state.revealed[key] = true;
+      writeStorage('ksm-bank-answers', state.bankAnswers);
+      render();
+      return;
+    }
+
+    if (action === 'toggle-explanation') {
+      const key = el.dataset.key;
+      state.revealed[key] = !state.revealed[key];
+      render();
+      return;
+    }
+
+    if (action === 'choose-tryout-year') {
+      const year = Number(el.dataset.year);
+      state.tryout.year = year;
+      state.tryout.index = 0;
+      state.tryout.answers = {};
+      state.tryout.seconds = 45*60;
+      render();
+      return;
+    }
+
+    if (action === 'start-tryout') {
+      resetTryout(false);
+      state.tryout.started = true;
+      render();
+      return;
+    }
+
+    if (action === 'tryout-answer') {
+      const no = Number(el.dataset.no);
+      const choice = Number(el.dataset.choice);
+      state.tryout.answers[no] = choice;
+      render();
+      return;
+    }
+
+    if (action === 'tryout-prev') {
+      state.tryout.index = Math.max(0,state.tryout.index-1);
+      render();
+      return;
+    }
+
+    if (action === 'tryout-next') {
+      const set = questions.filter(q=>q.year===state.tryout.year);
+      state.tryout.index = Math.min(set.length-1,state.tryout.index+1);
+      render();
+      return;
+    }
+
+    if (action === 'goto-question') {
+      state.tryout.index = Number(el.dataset.index);
+      render();
+      return;
+    }
+
+    if (action === 'submit-tryout') {
+      if (confirm('Akhiri tryout dan tampilkan nilai?')) {
+        state.tryout.submitted = true;
+        render();
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+      return;
+    }
+
+    if (action === 'reset-tryout') {
+      resetTryout(false);
+      render();
+      return;
+    }
+
+    if (action === 'result-to-bank') {
+      state.selectedYear = Number(el.dataset.year);
+      state.page = 'bank';
+      resetBankFilters();
+      render();
+      return;
+    }
+
+    if (action === 'open-2026-bank') {
+      state.selectedYear = 2026;
+      state.page = 'bank';
+      resetBankFilters();
+      render();
+      return;
+    }
+  }
+
+  function resetBankFilters() {
+    state.query = '';
+    state.category = 'Semua';
+    state.difficulty = 'Semua';
+  }
+
+  function resetTryout(keepStarted=false) {
+    stopTryoutTimer();
+    state.tryout.started = keepStarted;
+    state.tryout.index = 0;
+    state.tryout.answers = {};
+    state.tryout.submitted = false;
+    state.tryout.seconds = 45*60;
+  }
+
+  function startTryoutTimer() {
+    stopTryoutTimer();
+    state.tryout.timerId = setInterval(() => {
+      if (!state.tryout.started || state.tryout.submitted) {
+        stopTryoutTimer();
+        return;
+      }
+      state.tryout.seconds = Math.max(0,state.tryout.seconds-1);
+      const timer = document.getElementById('timerText');
+      if (timer) {
+        timer.textContent = '⏱ ' + formatTime(state.tryout.seconds);
+        timer.classList.toggle('danger', state.tryout.seconds < 300);
+      }
+      if (state.tryout.seconds === 0) {
+        state.tryout.submitted = true;
+        stopTryoutTimer();
+        render();
+        window.scrollTo({top:0,behavior:'smooth'});
+      }
+    },1000);
+  }
+
+  function stopTryoutTimer() {
+    if (state.tryout.timerId) {
+      clearInterval(state.tryout.timerId);
+      state.tryout.timerId = null;
+    }
+  }
+
+  window.addEventListener('beforeunload', stopTryoutTimer);
+  render();
+})();
+
+</script>
+</body>
+</html>
